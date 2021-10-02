@@ -1,1 +1,0 @@
-# inter_com_week2

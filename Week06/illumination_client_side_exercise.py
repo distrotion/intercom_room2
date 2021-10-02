@@ -73,7 +73,7 @@ def gl_init_models():
     glEnableClientState(GL_VERTEX_ARRAY)
     glEnableClientState(GL_COLOR_ARRAY)
 
-    df = pd.read_csv("../models/bunny_uv.tri", delim_whitespace=True, 
+    df = pd.read_csv("./bunny_uv.tri", delim_whitespace=True, 
                      comment='#', header=None, dtype=np.float32)
     centroid = df.values[:, 0:3].mean(axis=0)
     bbox = df.values[:, 0:3].max(axis=0) - df.values[:, 0:3].min(axis=0)
